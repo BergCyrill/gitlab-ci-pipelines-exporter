@@ -46,4 +46,4 @@ jobs:
         run: go tool github.com/goreleaser/goreleaser/v2 release --clean -f .goreleaser.fork.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ steps.owner.outputs.value }}
+          OWNER_LOWER: ${{ steps.owner.outputs.value }}
