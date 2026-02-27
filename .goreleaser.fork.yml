@@ -1,0 +1,48 @@
+version: 2
+before:
+  hooks:
+    - make autocomplete-scripts
+
+builds:
+  - main: ./cmd/gitlab-ci-pipelines-exporter
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+      - arm
+    goarm: [6, 7]
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X github.com/mvisonneau/gitlab-ci-pipelines-exporter/internal/app.Version={{.Version}}
+
+dockers_v2:
+  - images:
+      - ghcr.io/{{ .Env.GITHUB_REPOSITORY_OWNER }}/gitlab-ci-pipelines-exporter
+    tags:
+      - "{{ .Tag }}"
+    dockerfile: Dockerfile
+    platforms:
+      - linux/amd64
+      - linux/arm64
+      - linux/arm/v6
+      - linux/arm/v7
+    labels:
+      org.opencontainers.image.title: "{{ .ProjectName }}"
+      org.opencontainers.image.description: "{{ .ProjectName }}"
+      org.opencontainers.image.url: "https://github.com/{{ .Env.GITHUB_REPOSITORY_OWNER }}/gitlab-ci-pipelines-exporter"
+      org.opencontainers.image.source: "https://github.com/{{ .Env.GITHUB_REPOSITORY_OWNER }}/gitlab-ci-pipelines-exporter"
+      org.opencontainers.image.version: "{{ .Version }}"
+      org.opencontainers.image.created: "{{ .Date }}"
+      org.opencontainers.image.revision: "{{ .FullCommit }}"
+      org.opencontainers.image.licenses: "Apache-2.0"
+
+checksum:
+  name_template: '{{ .ProjectName }}_{{ .Tag }}_sha512sums.txt'
+  algorithm: sha512
+
+changelog:
+  disable: true
