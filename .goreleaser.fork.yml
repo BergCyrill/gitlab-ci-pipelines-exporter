@@ -21,7 +21,7 @@ builds:
 
 dockers_v2:
   - images:
-      - ghcr.io/{{ .Env.GITHUB_REPOSITORY_OWNER | lower }}/gitlab-ci-pipelines-exporter
+      - ghcr.io/{{ .Env.GITHUB_REPOSITORY_OWNER }}/gitlab-ci-pipelines-exporter
     tags:
       - "{{ .Tag }}"
     dockerfile: Dockerfile
@@ -33,8 +33,8 @@ dockers_v2:
     labels:
       org.opencontainers.image.title: "{{ .ProjectName }}"
       org.opencontainers.image.description: "{{ .ProjectName }}"
-      org.opencontainers.image.url: "https://github.com/{{ .Env.GITHUB_REPOSITORY_OWNER | lower }}/gitlab-ci-pipelines-exporter"
-      org.opencontainers.image.source: "https://github.com/{{ .Env.GITHUB_REPOSITORY_OWNER | lower }}/gitlab-ci-pipelines-exporter"
+      org.opencontainers.image.url: "https://github.com/{{ .Env.GITHUB_REPOSITORY_OWNER }}/gitlab-ci-pipelines-exporter"
+      org.opencontainers.image.source: "https://github.com/{{ .Env.GITHUB_REPOSITORY_OWNER }}/gitlab-ci-pipelines-exporter"
       org.opencontainers.image.version: "{{ .Version }}"
       org.opencontainers.image.created: "{{ .Date }}"
       org.opencontainers.image.revision: "{{ .FullCommit }}"
