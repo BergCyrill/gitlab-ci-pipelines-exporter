@@ -21,7 +21,7 @@ require (
 	github.com/redis/go-redis/extra/redisotel/v9 v9.17.3
 	github.com/redis/go-redis/v9 v9.17.3
 	github.com/sirupsen/logrus v1.9.4
-	github.com/stretchr/testify v1.11.1
+	github.com/stretchr/testify v1.12.1
 	github.com/uptrace/opentelemetry-go-extra/otellogrus v0.3.2
 	github.com/urfave/cli/v3 v3.6.2
 	github.com/vmihailenco/msgpack/v5 v5.4.1
@@ -29,7 +29,8 @@ require (
 	github.com/vmihailenco/taskq/redisq/v4 v4.0.0-beta.4
 	github.com/vmihailenco/taskq/v4 v4.0.0-beta.4
 	github.com/xeonx/timeago v1.0.0-rc5
-	gitlab.com/gitlab-org/api/client-go v1.34.0
+	gitlab.com/gitlab-org/api/client-go v1.11.0
+	gitlab.com/gitlab-org/api/client-go/v2 v2.64.0
 	go.openly.dev/pointy v1.3.0
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.65.0
 	go.opentelemetry.io/otel v1.40.0
@@ -38,11 +39,11 @@ require (
 	go.opentelemetry.io/otel/sdk v1.40.0
 	go.opentelemetry.io/otel/trace v1.40.0
 	golang.org/x/exp v0.0.0-20260212183809-81e46e3db34a
-	golang.org/x/mod v0.33.0
-	golang.org/x/oauth2 v0.35.0
-	golang.org/x/time v0.14.0
+	golang.org/x/mod v0.38.0
+	golang.org/x/oauth2 v0.36.0
+	golang.org/x/time v0.15.0
 	google.golang.org/grpc v1.79.1
-	google.golang.org/protobuf v1.36.11
+	google.golang.org/protobuf v1.36.12
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -50,7 +51,7 @@ require (
 	4d63.com/gocheckcompilerdirectives v1.3.0 // indirect
 	4d63.com/gochecknoglobals v0.2.2 // indirect
 	al.essio.dev/pkg/shellescape v1.6.0 // indirect
-	cel.dev/expr v0.25.1 // indirect
+	cel.dev/expr v0.25.3 // indirect
 	charm.land/lipgloss/v2 v2.0.0-beta.3.0.20251120230642-dcccabe2cd63 // indirect
 	cloud.google.com/go v0.123.0 // indirect
 	cloud.google.com/go/auth v0.17.0 // indirect
@@ -472,7 +473,7 @@ require (
 	github.com/spiffe/go-spiffe/v2 v2.6.0 // indirect
 	github.com/ssgreg/nlreturn/v2 v2.2.1 // indirect
 	github.com/stbenjam/no-sprintf-host-port v0.3.1 // indirect
-	github.com/stretchr/objx v0.5.2 // indirect
+	github.com/stretchr/objx v0.5.3 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/tetafro/godot v1.5.4 // indirect
 	github.com/theupdateframework/go-tuf v0.7.0 // indirect
@@ -520,16 +521,16 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
-	go.yaml.in/yaml/v3 v3.0.4 // indirect
+	go.yaml.in/yaml/v3 v3.0.5 // indirect
 	gocloud.dev v0.44.0 // indirect
-	golang.org/x/crypto v0.48.0 // indirect
+	golang.org/x/crypto v0.54.0 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20251125195548-87e1e737ad39 // indirect
-	golang.org/x/net v0.50.0 // indirect
-	golang.org/x/sync v0.19.0 // indirect
-	golang.org/x/sys v0.41.0 // indirect
-	golang.org/x/term v0.40.0 // indirect
-	golang.org/x/text v0.34.0 // indirect
-	golang.org/x/tools v0.42.0 // indirect
+	golang.org/x/net v0.57.0 // indirect
+	golang.org/x/sync v0.22.0 // indirect
+	golang.org/x/sys v0.47.0 // indirect
+	golang.org/x/term v0.45.0 // indirect
+	golang.org/x/text v0.41.0 // indirect
+	golang.org/x/tools v0.48.0 // indirect
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da // indirect
 	google.golang.org/api v0.257.0 // indirect
 	google.golang.org/genproto v0.0.0-20251213004720-97cd9d5aeac2 // indirect
