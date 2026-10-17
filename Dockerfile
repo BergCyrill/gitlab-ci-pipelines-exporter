@@ -2,7 +2,7 @@
 # BUILD CONTAINER
 ##
 
-FROM alpine:3.23@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 as certs
+FROM alpine:3.24@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6 as certs
 
 RUN \
 apk add --no-cache ca-certificates
@@ -11,7 +11,7 @@ apk add --no-cache ca-certificates
 # RELEASE CONTAINER
 ##
 
-FROM busybox:1.37-glibc@sha256:ba8e26a0e4dc1178f2c90ff8c4090e1ca351bf8f38b2be3052de194e7e2ad291
+FROM busybox:1.38-glibc@sha256:99813cb178ace2cd9c6c53ee3bddef5d2f5708aa438335111d7a9e3c5e1aaebe
 
 WORKDIR /
 
